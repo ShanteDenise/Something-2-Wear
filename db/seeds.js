@@ -97,7 +97,7 @@ const closet1 = new Closet ({
 });
 
 const user1 = new User ({
-    name: 'Shante',
+    name: 'Shante Austin',
     password:'favor42',
     email:'shante.austin@yahoo.com',
     closet: [closet1]
@@ -119,7 +119,6 @@ User.remove({})
 
 
 
-    
 
 
 
