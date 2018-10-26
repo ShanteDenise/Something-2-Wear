@@ -3,9 +3,30 @@ const Schema = mongoose.Schema
 
 const User = new Schema ({
     name: String,
-    password: String,
-    closet: Array,
-    outfits: Array
+    password: {
+        type:String,
+        maxlength:10,
+    },
+    closet: [
+        {
+        type: Schema.Types.ObjectId,
+        ref:'Tops'
+    },
+    {
+        type: Schema.Types.ObjectId,
+        ref: 'Bottoms'
+    },
+    {
+        type: Schema.Types.ObjectId,
+        ref: 'Shoes'
+        
+    },
+    {
+        type: Schema.Types.ObjectId,
+        ref: 'Accessories'
+        
+    }
+]
 
 })
 

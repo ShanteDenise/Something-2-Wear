@@ -6,7 +6,10 @@ const User = require('../models/User')
 const User1 = new user ({
     name: "Chizzy",
     password: "Dreamer94",
-    closet: [],
-    outfits: []
+    Wardrobe: [
+        {
+
+        }
+    ]
 
 })
