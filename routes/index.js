@@ -4,11 +4,15 @@ const applicationController = require('../controllers/application')
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
 router.get('/', applicationController.index)
+router.get('/login', applicationController.show)
+
+router.get('/user/new', usersController.new)
+router.get('/user/:id', usersController.show)
+router.get('/user', usersController.create)
+
+
+
 
 
 module.exports = router;
