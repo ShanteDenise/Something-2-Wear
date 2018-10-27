@@ -1,6 +1,6 @@
 const applicationController = {
     index: (req, res) => {
-        res.send("Hey this a route stores")  
+    res.render('app/index')
 },
 
     show: (req, res) => {
