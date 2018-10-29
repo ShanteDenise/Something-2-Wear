@@ -6,9 +6,9 @@ const usersController = require('../controllers/users')
 /* GET home page. */
 router.get('/', applicationController.index)
 
-router.get('/user/:id', usersController.new)
-// router.get('/user/:id', usersController.show)
-// router.get('/user', usersController.create)
+router.get('/login', usersController.login)
+router.get('/user/:id/closet', usersController.show)
+router.get('/user', usersController.new)
 
 
 
