@@ -1,13 +1,12 @@
 const usersController = {
     new: (req, res) => {
-        res.send("Hey this a route stores")  
+        res.render("users/show")  
 },
-
     show: (req, res) => {
-    res.send("Hey girl Hey")  
+    res.send('damn')  
 },
     create: (req, res) => {
-    res.send("Hey girl Hey")  
+    res.send("grrrrr")  
 }
 
 }
