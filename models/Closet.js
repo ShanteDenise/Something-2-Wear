@@ -2,6 +2,13 @@ const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
 const Closet = new Schema ({
+    user: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
+        },
+    ],
+  
     tops: [
         {
             type: Schema.Types.ObjectId,
@@ -26,12 +33,7 @@ const Closet = new Schema ({
             ref: 'Accessories'
         },
     ]
-   
-
-
-
 })
-
 
 
 module.exports = mongoose.model('Closet', Closet)

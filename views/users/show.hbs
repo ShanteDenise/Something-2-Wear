@@ -1,10 +1,16 @@
-<p>{{user.name}} Welcome to Your Closet</p>
+<div class="profileSection">
+<img src="{{user.img}}" class="userProfile">
+<p class="userName">{{user.name}} Welcome to Your Closet</p>
+
+</div>
+
+
 
 <div class="card-columns">
   <div class="card">
-    <img class="card-img-top" src="{{img}}">  alt="Card image cap">
+   <a href="/users/{{_id}}/closet/{{id}}/bottoms"> <img src="https://media.dollskill.com/media/WKbQAcjXZ2Mp82XJrp1lcYkgksHnlkDT-34.jpg" class="card-img-top"  alt="Card image cap"></a>
     <div class="card-body">
-      <h5 class="card-title">Card title that wraps to a new line</h5>
+      <h5 class="card-title">Bottoms</h5>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
   </div>
@@ -19,10 +25,11 @@
     </blockquote>
   </div>
   <div class="card">
-    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
+
+    <a href="/users/{{userId}}/closet/{{closetId}}/tops"><img class="card-img-top" src="https://images.unsplash.com/photo-1501978811118-e2abb948bb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=17b056dfcf7a942e755a2a918c13d7bb&auto=format&fit=crop&w=500&q=60" alt="Card image of a shirt"></a>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <h5 class="card-title">Tops</h5>
+      <p class="card-text"></p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -40,11 +47,10 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
   <div class="card">
-    <img class="card-img" src=".../100px260/" alt="Card image">
+    <img class="card-img" src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=93ac7738d6d00bbe2b003cbe833300cd&auto=format&fit=crop&w=1050&q=80" alt="Card image">
   </div>
   <div class="card p-3 text-right">
     <blockquote class="blockquote mb-0">
@@ -58,8 +64,9 @@
   </div>
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+      <h5 class="card-title">Accessories</h5>
+          <img class="card-img" src="https://i.pinimg.com/564x/56/5a/75/565a758ffa0f8118487a413ef37a76cf.jpg" alt="Card image">
+      <a href="#"><p class="card-text">View My Accessories.</p></a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>

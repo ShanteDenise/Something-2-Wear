@@ -1,26 +1,53 @@
 const User = require('../models/User')
-
-
+const Closet = require('../models/Closet')
 
 
 const usersController = {
-    login: (req, res) => {
-        res.render("login/login")  
+index: (req, res) => {
+    User.find({}).populate('users')
+    .then( (user) => {
+        res.render('users/index', {
+            user: user
+        })
+    })
+},
+
+login: (req, res) => {
+        res.send("login/login")  
 },
 
 new: (req, res) => {
-    res.render('users/new')
-  },
+    res.send('users/new')
+},
+
+
 show: (req, res) => {
-    User.findById(req.params.id).populate('bottoms').then((user) => {
-      res.render('users/show', {user:user})
+    const userId = req.params.usersId
+    const closetId = req.params.closetId
+    console.log(userId)
+    User.findById(req.params.usersId).populate('closet')
+    .then((user) => {
+        res.render('users/show', {
+            user: user,
+            closetId: closetId,
+            userId: userId
+        })
     }) 
-    }
+  },
+
+
+  create: (req, res) => {
+      User.create(req.body).then(newUser => {
+          res.redirect('/users')
+      })
+}
+
+  
+
+
     
 }
-//     create: (req, res) => {
-//     res.send("grrrrr")  
-// }
+
 
 
    

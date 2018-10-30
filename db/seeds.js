@@ -6,7 +6,6 @@ const Accessories = require('../models//Accessories')
 const Closet = require('../models/Closet')
 const User = require('../models/User')
 
-
 const modernShirt = new Tops ({
         type: "blouse",
         color: "white",
@@ -87,32 +86,35 @@ const necklace = new Accessories ({
     img:"http://pngimg.com/uploads/necklace/necklace_PNG130.png"
 })
 
+
 const closet1 = new Closet ({
-        Tops: [modernShirt, winterSweater, fashionTshirt],
-        Bottoms: [classicSkinny, leatherSkirt, miniShorts, camoPants],
-        Shoes:[openHeel, ankleBoots, closedHeel, redBoots],
-        Accessories:[coinPurse, necklace]
-
-
+    tops: [modernShirt, winterSweater, fashionTshirt],
+    bottoms: [classicSkinny, leatherSkirt, miniShorts, camoPants],
+    shoes: [openHeel, ankleBoots, closedHeel, redBoots],
+    accessories: [coinPurse, necklace]
 });
 
-const user1 = new User ({
+    const user1 = new User ({
     name: 'Shante Austin',
     password:'favor42',
+    img:'https://i.pinimg.com/564x/d2/1c/65/d21c651e69d5d2a8f86b1acddc381a85.jpg',
     email:'shante.austin@yahoo.com',
     closet: [closet1]
 });
 
         
   
-User.remove({})
-.then(() => {
-    Closet.insertMany([closet1])
-})
+User.deleteMany({})
+.then(() => Closet.deleteMany({}))
+.then(() => Tops.deleteMany({}))
+.then(() => Bottoms.deleteMany({}))
+.then(() => Shoes.deleteMany({}))
+.then(() => Accessories.deleteMany({}))
 .then(() => Tops.insertMany([modernShirt, winterSweater, fashionTshirt]))
 .then(() => Bottoms.insertMany([classicSkinny, leatherSkirt, miniShorts, camoPants]))
 .then(() => Shoes.insertMany([openHeel, ankleBoots, closedHeel, redBoots]))
 .then(() => Accessories.insertMany([coinPurse, necklace]))
+.then(() => Closet.insertMany([closet1]))
 .then(() => user1.save())
 .then(() => console.log("Database seeded success"))
 .then(() => mongoose.connection.close())

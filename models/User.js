@@ -4,31 +4,15 @@ const Schema = mongoose.Schema
 const User = new Schema ({
     name: String,
     email:String,
+    img: String,
     password: {
         type:String,
         maxlength:10,
     },
-    closet: [
-        {
+    closet: [{
         type: Schema.Types.ObjectId,
-        ref:'Tops'
-    },
-    {
-        type: Schema.Types.ObjectId,
-        ref: 'Bottoms'
-    },
-    {
-        type: Schema.Types.ObjectId,
-        ref: 'Shoes'
-        
-    },
-    {
-        type: Schema.Types.ObjectId,
-        ref: 'Accessories'
-        
-    }
-]
-
+        ref: 'Closet'
+    }]
 })
 
 module.exports = mongoose.model('User', User)
