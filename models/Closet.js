@@ -2,6 +2,7 @@ const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
 const Closet = new Schema ({
+    name: String,
     user: [
         {
             type: Schema.Types.ObjectId,

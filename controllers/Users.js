@@ -2,12 +2,20 @@ const User = require('../models/User')
 const Closet = require('../models/Closet')
 
 
+
 const usersController = {
 index: (req, res) => {
+    const closetId = req.params.closetId
+    const usersId = req.params.usersId
     User.find({}).populate('users')
     .then( (user) => {
+        console.log(user)
+        let closet = user.closet
+        console.log("CLOSET", closet)
         res.render('users/index', {
-            user: user
+            user: user,
+            usersId: usersId,
+            closetId: closet
         })
     })
 },
@@ -17,7 +25,7 @@ login: (req, res) => {
 },
 
 new: (req, res) => {
-    res.send('users/new')
+    res.render('users/new')
 },
 
 
@@ -37,10 +45,17 @@ show: (req, res) => {
 
 
   create: (req, res) => {
-      User.create(req.body).then(newUser => {
+      User.create(req.body).then(() => {
           res.redirect('/users')
       })
-}
+},
+
+
+delete: (req, res) => {
+    User.findByIdAndRemove(req.params.usersId).then(() => {
+      res.redirect('/users')
+    })
+  }
 
   
 

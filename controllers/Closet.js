@@ -1,12 +1,15 @@
-// const Closet = require('../models/Closet')
+const Closet = require('../models/Closet')
 
-// const closetController = {
-// show: (req, res) => {
-//     Closet.findById(req.params.id).then((closet) => {
-//       res.render('users/show', {closet:closet})
-//     }) 
-//     }
-// }
+const closetController = {
+    new: (req, res) => {
+        res.render('closet/new')
+    },
+    create: (req,res) => {
+      Closet.create(req.body).then(() => {
+            res.redirect('/users')
+    })
+}
+}
 
 
-// module.exports = closetController
+module.exports = closetController

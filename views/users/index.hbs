@@ -1,9 +1,19 @@
 
 
 {{#each user}}
-<a href="/users/{{id}}/closet"> <button>My Closet</button></a>
 <h2>{{name}}</h2>
 <img src="{{img}}" alt="">
+{{#if closet}}
+    {{#each closet}}
+        <a href="/users/{{../_id}}/closet/{{_id}}"> <button>My Closet</button></a>
+    {{/each}}
+{{else}}
+        <a href="/users/{{_id}}/closet/new">Create a closet</a>
+{{/if}}
+ <form action="/users/{{_id}}?_method=DELETE" method="POST">
+    <button type="submit">DELETE YOUR PROFILE</button>
+</form>
 {{/each}}
 
+<a href="/users/new"><button>Create A New Profile</button></a>
 

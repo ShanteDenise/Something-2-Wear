@@ -20,6 +20,10 @@ const topsController = {
         })
     },
 
+    new: (req, res) => {
+        res.render('tops/new')
+      },
+
     edit: (req, res) => {
         const userId = req.params.usersId
         const closetId = req.params.closetId
@@ -34,18 +38,17 @@ const topsController = {
 
     update: (req, res) => {
         Tops.findByIdAndUpdate(req.params.topsId, req.body).then((updatedTop) => {
-            console.log(updatedTop)
             updatedTop.save()
             res.redirect(`/users/${req.params.usersId}/closet/${req.params.closetId}/tops/${req.params.topsId}`)
         })
-    }
+    },
 
-    // create: (req, res) => {
-    //     // req.body is just a JS object with data from the form
-    //     Tops.create(req.body).then((newTop) => {
-    //       res.redirect(`/${newTop._id}`)
-    //     })
-    //   }
+    create: (req, res) => {
+        Tops.create(req.body).then((newTop) => {
+            newTop.save()
+          res.redirect(`/users/${req.params.usersId}/closet/${req.params.closetId}/tops`)
+        })
+      }
 
 }
 
