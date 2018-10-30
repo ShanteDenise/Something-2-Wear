@@ -9,9 +9,7 @@ index: (req, res) => {
     const usersId = req.params.usersId
     User.find({}).populate('users')
     .then( (user) => {
-        console.log(user)
         let closet = user.closet
-        console.log("CLOSET", closet)
         res.render('users/index', {
             user: user,
             usersId: usersId,
@@ -32,7 +30,6 @@ new: (req, res) => {
 show: (req, res) => {
     const userId = req.params.usersId
     const closetId = req.params.closetId
-    console.log(userId)
     User.findById(req.params.usersId).populate('closet')
     .then((user) => {
         res.render('users/show', {
@@ -45,6 +42,7 @@ show: (req, res) => {
 
 
   create: (req, res) => {
+      console.log('This is what is being hit')
       User.create(req.body).then(() => {
           res.redirect('/users')
       })

@@ -5,10 +5,15 @@ const closetController = {
         res.render('closet/new')
     },
     create: (req,res) => {
-      Closet.create(req.body).then(() => {
-            res.redirect('/users')
-    })
-}
+        console.log("this is the id: ",req.params.userId)
+        User.findById(req.params.id).then(user =>{
+            Closet.create(req.body).then(() => {
+                res.redirect('/users',{
+                    user: user
+                })
+            })
+        })
+    }
 }
 
 

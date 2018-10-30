@@ -13,21 +13,16 @@ router.get('/', applicationController.index)
 
 router.get('/login', usersController.login)
 
-
-
-router.get('/users', usersController.index)
-
-router.get('/users/new' , usersController.new)
-router.post('/users', usersController.create)
-
-router.delete('/users/:usersId', usersController.delete)
-
-
 router.get('/users/:usersId/closet/:closetId/tops', topsController.index)
 router.get('/users/:usersId/closet/:closetId/bottoms', bottomsController.index)
 router.get('/users/:usersId/closet/new', closetController.new)
 router.post('users/:userId/closet/:closetId', closetController.create)
+
+router.get('/users', usersController.index)
+router.get('/users/new' , usersController.new)
+router.post('/users', usersController.create)
 router.get('/users/:usersId/closet/:closetId', usersController.show)
+router.delete('/users/:usersId', usersController.delete)
 
 
 
