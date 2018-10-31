@@ -1,24 +1,18 @@
 Something 2 Wear
 
-Inspiration
+Overview:
+
+For Project 2 I created a full stack application using (M)Mongoose,(E)Express,(H)HandleBars, and (N)Node.
+
+Inspiration:
 
 I always feel that I have nothing to wear when I have hundreds of clothes. I will sometimes forget I have a clothing item and purchase something similar. I created this app for women and men who could use a bit more organization. The app makes it easy to go through your closet anywhere at anytime.  
 
 
-User Stories
-
-Users have a way to organize and communicate a game with a “create game feature”
-
-If you need people to play with or don't know of a location where soccer is being played a “join game feature” will be needed.
-
-Know more about other users before joining a game (such as age, sex, picture, name, etc.) with “user profiles”.
-
-Finding the location of a game with a “map feature”.
-
-Build it responsive so that it can be used on a mobile phone.
-
 
 Technologies Used:
+
+HTML5
 
 Express 
 
@@ -68,27 +62,28 @@ Show Page for Individual Clothing Items
 ERD Diagram / Model Associations
 In this project I had six models with a one-to-many relationship. 
 
+![screen shot 2018-10-31 at 1 03 43 pm](https://user-images.githubusercontent.com/33140493/47805333-790cde80-dd0d-11e8-9659-297797c8f11c.png)
 
 
 
 
 
+Future Features:
 
-Future Features
-Many future features are included in the wireframes, but next few would be:
+Users will be able to make outfits out of their clothing
 
-Game Feed
+New Users will be able to create a full closet
 
-Player Messaging
+NewsFeed
 
-Improved Profiles
+User will be able to like other Users outfits on NewsFeed
 
-Better location features
+Customized Profiles
 
 Player Ratings
 
-Email updates
+Fully Functional Models 
 
-OAuth
+Clothing search
 
-Game/player search
+Descriptions for Clothing Items 
