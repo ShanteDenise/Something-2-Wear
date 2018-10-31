@@ -48,10 +48,14 @@ Home Page
 
 Profile Setup
 
+![screen shot 2018-10-31 at 12 55 53 pm](https://user-images.githubusercontent.com/33140493/47804924-6e057e80-dd0c-11e8-9a63-9054f8829ce1.png)
+
+
 
 
 
 Show Page for Individual Clothing Items
+
 
 
 
