@@ -40,7 +40,8 @@ HandleBars.js
 Here are my wireframes for FootUp intended for use on a mobile phone. They are quite detailed, have a lot of wishful features, and many are not included on the app. They may be added in the future!
 
 ##Home Page
-<img src="images/homepage">
+![screen shot 2018-10-31 at 12 35 15 pm](https://user-images.githubusercontent.com/33140493/47804534-6db8b380-dd0b-11e8-97c7-22593bd95841.png)
+
 
 
 ##Profile Setup
