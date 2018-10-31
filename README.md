@@ -1,10 +1,12 @@
-#Something 2 Wear
+Something 2 Wear
 
-##Inspiration
+Inspiration
+
 I always feel that I have nothing to wear when I have hundreds of clothes. I will sometimes forget I have a clothing item and purchase something similar. I created this app for women and men who could use a bit more organization. The app makes it easy to go through your closet anywhere at anytime.  
 
 
-##User Stories
+User Stories
+
 Users have a way to organize and communicate a game with a “create game feature”
 
 If you need people to play with or don't know of a location where soccer is being played a “join game feature” will be needed.
@@ -16,7 +18,7 @@ Finding the location of a game with a “map feature”.
 Build it responsive so that it can be used on a mobile phone.
 
 
-##Technologies Used:
+Technologies Used:
 
 Express 
 
@@ -34,18 +36,20 @@ HandleBars.js
 
 
 
-##Wireframes 
+Wireframes:
+
 Here are my wireframes for FootUp intended for use on a mobile phone. They are quite detailed, have a lot of wishful features, and many are not included on the app. They may be added in the future!
 
-##Home Page
+Home Page
+
 ![screen shot 2018-10-31 at 12 35 15 pm](https://user-images.githubusercontent.com/33140493/47804534-6db8b380-dd0b-11e8-97c7-22593bd95841.png)
 
 
 
-##Profile Setup
+Profile Setup
 
 
-##Show Page for Individual Clothing Items
+Show Page for Individual Clothing Items
 
 
 
