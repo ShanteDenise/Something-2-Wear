@@ -43,25 +43,16 @@ Here are my wireframes for FootUp intended for use on a mobile phone. They are q
 <img src="images/homepage">
 
 
-Profile Setup
+##Profile Setup
 
 
-Game Feed
+##Show Page for Individual Clothing Items
 
 
-Create Game
 
 
-Create Game by Location
 
 
-Game Details
-
-
-Public Profile Pages
-
-
-Invitations
 
 
 ERD Diagram / Model Associations
