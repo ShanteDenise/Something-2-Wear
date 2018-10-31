@@ -51,6 +51,10 @@ Profile Setup
 ![screen shot 2018-10-31 at 12 55 53 pm](https://user-images.githubusercontent.com/33140493/47804924-6e057e80-dd0c-11e8-9a63-9054f8829ce1.png)
 
 
+Index Page
+
+![screen shot 2018-10-31 at 1 01 35 pm](https://user-images.githubusercontent.com/33140493/47805226-2fbc8f00-dd0d-11e8-96cc-90656f21176c.png)
+
 
 
 
@@ -63,6 +67,12 @@ Show Page for Individual Clothing Items
 
 ERD Diagram / Model Associations
 In this project I had six models with a one-to-many relationship. 
+
+
+
+
+
+
 
 Future Features
 Many future features are included in the wireframes, but next few would be:
