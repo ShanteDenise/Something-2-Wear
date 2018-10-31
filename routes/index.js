@@ -12,8 +12,6 @@ const accessoriesController = require('../controllers/accessories')
 
 router.get('/', applicationController.index)
 
-router.get('/login', usersController.login)
-
 router.get('/users/:usersId/closet/:closetId/tops', topsController.index)
 router.get('/users/:usersId/closet/:closetId/bottoms', bottomsController.index)
 router.get('/users/:usersId/closet/:closetId/shoes', shoesController.index)
