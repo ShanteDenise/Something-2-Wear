@@ -41,20 +41,25 @@
 
 } */
 
-.container1{
-  height:25rem;
+
+
+
+.head-photo{
   width: 100%;
   display: flex;
-  background-color: yellow;
-}
-.color1 ,
- .color2, 
- .color3{
-  height:25rem;
-  width: 34%;
-  background-color:yellow;
 }
 
-.color2{
-  background-color:yellow;
+
+#header-img{
+  height:30rem;
+}
+#header-word{
+  font-size: 50px;
+  background-color: black;
+  color: white;
+}
+#text-header{
+  border:solid 10px white;
+  display: absolute;
+  
 }
