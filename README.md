@@ -10,7 +10,7 @@ For Project 2 I created a full stack application using (M)Mongoose,(E)Express,(H
 
 Inspiration:
 ----
-I always feel that I have nothing to wear when I have hundreds of clothes. I will sometimes forget I have a clothing item and purchase something similar. I created this app for women and men who could use a bit more organization. The app makes it easy to go through your closet anywhere at anytime.  
+I always feel that I have nothing to wear even when I have hundreds of clothes. I will sometimes forget I have a clothing item and purchase something similar later on. I created this app for women and men who could use a bit more organization. The app makes it easy to go through your closet anywhere at anytime.  
 
 Trello Board
 ----
