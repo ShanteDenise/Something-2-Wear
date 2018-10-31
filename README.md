@@ -56,6 +56,7 @@ Profile Setup
 
 Show Page for Individual Clothing Items
 
+![screen shot 2018-10-31 at 1 00 16 pm](https://user-images.githubusercontent.com/33140493/47805141-f421c500-dd0c-11e8-92da-7eb5ed54be89.png)
 
 
 
