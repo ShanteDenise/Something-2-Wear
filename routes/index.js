@@ -5,6 +5,7 @@ const usersController = require('../controllers/users')
 const topsController = require('../controllers/tops')
 const bottomsController = require('../controllers/bottoms')
 const closetController = require('../controllers/closet')
+const shoesController = require('../controllers/shoes')
 
 
 /* GET home page. */
@@ -15,6 +16,8 @@ router.get('/login', usersController.login)
 
 router.get('/users/:usersId/closet/:closetId/tops', topsController.index)
 router.get('/users/:usersId/closet/:closetId/bottoms', bottomsController.index)
+router.get('/users/:usersId/closet/:closetId/shoes', shoesController.index)
+
 router.get('/users/:usersId/closet/new', closetController.new)
 router.post('users/:userId/closet/:closetId', closetController.create)
 
