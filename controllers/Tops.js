@@ -13,9 +13,13 @@ const topsController = {
     },
 
     show: (req, res) => {
+        const userId = req.params.usersId
+        const closetId = req.params.closetId
         Tops.findById(req.params.topsId).then((tops) => {
             res.render('tops/show', {
-                tops: tops
+                tops: tops,
+                closetId: closetId,
+                userId: userId
             })
         })
     },
