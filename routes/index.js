@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 const applicationController = require('../controllers/application')
-const usersController = require('../controllers/users')
-const topsController = require('../controllers/tops')
-const bottomsController = require('../controllers/bottoms')
-const closetController = require('../controllers/closet')
-const shoesController = require('../controllers/shoes')
-const accessoriesController = require('../controllers/accessories')
+const usersController = require('../controllers/Users')
+const topsController = require('../controllers/Tops')
+const bottomsController = require('../controllers/Bottoms')
+const closetController = require('../controllers/Closet')
+const shoesController = require('../controllers/Shoes')
+const accessoriesController = require('../controllers/Accessories')
 
 /* GET home page. */
 
