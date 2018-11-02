@@ -1,5 +1,4 @@
-
- <a href="/users/new"><button class="btn btn-primary">Create A New Profile</button></a>
+<a href="/users/new"><button class="btn btn-primary">Create A New Profile</button></a>
 
 
 
@@ -11,45 +10,21 @@
         <h5 class="card-title">{{name}}</h5>
         <img class="card-img-top" src="{{img}}" alt="">
         {{#if closet}}
-            {{#each closet}}
+        {{#each closet}}
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="/users/{{../_id}}/closet/{{_id}}"> <button class="btn btn-primary">Go To My Closet</button></a>
-         {{/each}}
-            {{else}}
-             <a href="/users/{{_id}}/closet/new">Create a closet</a>
-             {{/if}}
-             <form action="/users/{{_id}}?_method=DELETE" method="POST">
-         <button class="btn btn-danger
+        {{/each}}
+        {{else}}
+        <a href="/users/{{_id}}/closet/new">Create a closet</a>
+        {{/if}}
+        <form action="/users/{{_id}}?_method=DELETE" method="POST">
+          <button class="btn btn-danger
          " type="submit">DELETE YOUR PROFILE</button>
-    </form>
-    {{/each}}
+        </form>
+        {{/each}}
 
 
 
 
 
-{{!-- 
-    <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> --}}
-      
-      
-      {{!-- </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div> --}}
-
+  
