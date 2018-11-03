@@ -30,8 +30,11 @@ router.delete('/users/:usersId', usersController.delete)
 
 
 
-// router.post('/', topsController.create)
 router.get('/users/:usersId/closet/:closetId/tops/:topsId', topsController.show)
+router.get('/users/:usersId/closet/:closetId/shoes/:shoesId', shoesController.show)
+
+router.get('/users/:usersId/closet/:closetId/shoes/:shoesId/edit', shoesController.edit)
+router.patch('/users/:usersId/closet/:closetId/shoes/:shoesId', shoesController.update)
 
 router.get('/users/:usersId/closet/:closetId/tops/:topsId/edit', topsController.edit)
 router.patch('/users/:usersId/closet/:closetId/tops/:topsId', topsController.update)

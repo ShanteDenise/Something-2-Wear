@@ -42,7 +42,6 @@ show: (req, res) => {
 
 
   create: (req, res) => {
-      console.log('This is what is being hit')
       User.create(req.body).then(() => {
           res.redirect('/users')
       })
