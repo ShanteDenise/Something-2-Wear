@@ -2,7 +2,7 @@ Something 2 Wear
 ----
 Live Site:
 ----
-https://git.heroku.com/limitless-escarpment-16941.git
+https://limitless-escarpment-16941.herokuapp.com/
 
 Overview:
 ----
@@ -77,6 +77,8 @@ In this project I had six models with a one-to-many relationship.
 
 Future Features:
 ---
+Authentication
+
 Users will be able to make outfits out of their clothing
 
 New Users will be able to create a full closet
