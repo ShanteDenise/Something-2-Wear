@@ -89,7 +89,6 @@ User will be able to like other Users outfits on NewsFeed
 
 Customized Profiles
 
-Player Ratings
 
 Fully Functional Models 
 
