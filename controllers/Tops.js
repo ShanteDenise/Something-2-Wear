@@ -11,7 +11,6 @@ const topsController = {
                 })
             })
     },
-
     show: (req, res) => {
         const topsId = req.params.topsId
         const userId = req.params.usersId

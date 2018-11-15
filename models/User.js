@@ -9,10 +9,10 @@ const User = new Schema ({
         type:String,
         maxlength:10,
     },
-    closet: [{
+    closet: {
         type: Schema.Types.ObjectId,
         ref: 'Closet'
-    }]
+    }
 })
 
 module.exports = mongoose.model('User', User)

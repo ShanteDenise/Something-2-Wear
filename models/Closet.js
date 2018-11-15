@@ -3,12 +3,11 @@ const Schema = mongoose.Schema
 
 const Closet = new Schema ({
     name: String,
-    user: [
+    user: 
         {
             type: Schema.Types.ObjectId,
             ref: 'User'
         },
-    ],
   
     tops: [
         {

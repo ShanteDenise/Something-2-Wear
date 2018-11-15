@@ -9,7 +9,7 @@
       <div class="card-body">
         <h5 class="card-title">{{name}}</h5>
         <img class="card-img-top" src="{{img}}" alt="">
-        <a href="/users/{{  _id}}/closet/{{_id}}"> <button class="btn btn-primary">Go To My Closet</button></a>
+        <a href="/users/{{  _id}}/closet/{{closet._id}}"> <button class="btn btn-primary">Go To My Closet</button></a>
         <form action="/users/{{_id}}?_method=DELETE" method="POST">
           <button class="btn btn-danger
          " type="submit">DELETE YOUR PROFILE</button>
