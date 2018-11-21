@@ -38,7 +38,6 @@ HandleBars.js
 
 Wireframes:
 ----
-Here are my wireframes for FootUp intended for use on a mobile phone. They are quite detailed, have a lot of wishful features, and many are not included on the app. They may be added in the future!
 
 Home Page
 ----
