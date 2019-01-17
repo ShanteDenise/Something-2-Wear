@@ -28,9 +28,8 @@ router.get('/users/:usersId/closet/:closetId', usersController.show)
 router.delete('/users/:usersId', usersController.delete)
 
 
-
-
 router.get('/users/:usersId/closet/:closetId/tops/:topsId', topsController.show)
+router.get('/users/:usersId/closet/:closetId/bottoms/:bottomsId', bottomsController.show)
 router.get('/users/:usersId/closet/:closetId/shoes/:shoesId', shoesController.show)
 
 router.get('/users/:usersId/closet/:closetId/shoes/:shoesId/edit', shoesController.edit)
